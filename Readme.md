@@ -1,14 +1,10 @@
-# SeleniumWithCucumber
-This is an sample project to demonstrate how to work with Selenium and cucumber for Java
+# TestProjectOpenSDK with Cucumber/TestNG/Extent Reports
+This is an sample project to demonstrate how to work with TestProject OpenSDK/cucumber/TestNg/Extent Report
 
 ~~~~
 # Important
 Make sure you have JAVA 10 or above installed to run this test
 ~~~~
-
-# Upgraded to Cucumber 4
-The code is now upgraded to Cucumber 4 with new
-
 # Upgraded to Cucumber-JVM 5
 The code is now upgraded to Cucumber 4 with new
 
