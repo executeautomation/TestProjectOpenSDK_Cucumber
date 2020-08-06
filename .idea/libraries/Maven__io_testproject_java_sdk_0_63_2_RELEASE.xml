@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.testproject:java-sdk:0.63.2-RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/testproject/java-sdk/0.63.2-RELEASE/java-sdk-0.63.2-RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/testproject/java-sdk/0.63.2-RELEASE/java-sdk-0.63.2-RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/testproject/java-sdk/0.63.2-RELEASE/java-sdk-0.63.2-RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

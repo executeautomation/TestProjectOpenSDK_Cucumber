@@ -1,0 +1,15 @@
+# Created on 2020-08-07T10:16:06.857
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-07T10:16:06.858
+WARNING: Illegal reflective access by com.google.gson.internal.reflect.UnsafeReflectionAccessor (file:/C:/Users/karth/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar) to field java.io.File.path
+
+# Created on 2020-08-07T10:16:06.859
+WARNING: Please consider reporting this to the maintainers of com.google.gson.internal.reflect.UnsafeReflectionAccessor
+
+# Created on 2020-08-07T10:16:06.860
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-07T10:16:06.861
+WARNING: All illegal access operations will be denied in a future release
+
