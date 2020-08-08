@@ -21,7 +21,7 @@ public class LoginPage {
     @FindBy(how = How.NAME, using = "Password")
     public WebElement txtPassword;
 
-    @FindBy(how = How.NAME, using = "Login")
+    @FindBy(how = How.CSS, using = ".btn-default")
     public WebElement btnLogin;
 
     public void Login(String userName, String password)
@@ -32,7 +32,7 @@ public class LoginPage {
 
     public void ClickLogin()
     {
-        btnLogin.submit();
+        btnLogin.click();
     }
 
 

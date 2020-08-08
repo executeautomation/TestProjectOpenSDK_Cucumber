@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Complete test run</title>
+<title>TestNG:  Surefire test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Complete test run</h2><table border='1' align="center">
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 08 13:22:36 NZST 2020</td>
+<td>Started on:</td><td>Sat Aug 08 13:20:11 NZST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43272 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (729 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,14 +76,24 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with correct username and password", "LoginFeature"</td>
-<td></td>
-<td>21</td>
-<td>runner.TestRunner@37ceb1df</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at steps.Hook.InitializeTest(Hook.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1419332030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1419332030'><pre>java.lang.NullPointerException
+	at steps.Hook.InitializeTest(Hook.java:36)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@2d7275fc</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with correct username and password to fail", "LoginFeature"</td>
-<td></td>
-<td>20</td>
-<td>runner.TestRunner@37ceb1df</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at steps.Hook.InitializeTest(Hook.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace332365138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace332365138'><pre>java.lang.NullPointerException
+	at steps.Hook.InitializeTest(Hook.java:36)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@2d7275fc</td></tr>
 </table><p>
 </body>
 </html>

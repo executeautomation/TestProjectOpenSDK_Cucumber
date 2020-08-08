@@ -1,6 +1,7 @@
 Base\BaseUtil.class
 pages\LoginPage.class
 steps\LoginStep.class
+pages\HomePage.class
 steps\LoginStep$User.class
 runner\NGTestListener.class
 steps\Hook.class

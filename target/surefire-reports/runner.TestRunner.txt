@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.183 s <<< FAILURE! - in runner.TestRunner
+runScenario(runner.TestRunner)  Time elapsed: 0.186 s  <<< FAILURE!
+java.lang.NullPointerException
+
+runScenario(runner.TestRunner)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.NullPointerException
+

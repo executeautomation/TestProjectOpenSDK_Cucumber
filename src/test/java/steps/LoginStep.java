@@ -9,6 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import pages.HomePage;
 import pages.LoginPage;
 
 import java.util.List;
@@ -29,7 +30,7 @@ public class LoginStep extends BaseUtil{
     public User convert(Map<String, String> entry){
         return new User(
                 entry.get("username"),
-                entry.get("password").concat("$$$$$")
+                entry.get("password")
         );
     }
 
@@ -38,16 +39,16 @@ public class LoginStep extends BaseUtil{
     public void iShouldSeeTheUserformPage() throws Throwable {
         scenarioDef.createNode(new GherkinKeyword("Then"), "I should see the userform page");
 
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("Initial")).isDisplayed(), true);
+        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.linkText("Employee Details")).isDisplayed(), true);
     }
 
     @Given("^I navigate to the login page$")
     public void iNavigateToTheLoginPage() throws Throwable {
-
-
         base.scenarioDef.createNode(new GherkinKeyword("Given"), "I navigate to the login page");
         System.out.println("Navigate Login Page");
-        base.Driver.navigate().to("http://www.executeautomation.com/demosite/Login.html");
+        base.Driver.navigate().to("http://eaapp.somee.com/");
+        HomePage page = new HomePage(base.Driver);
+        page.clickLoginLink();
     }
 
 
@@ -62,17 +63,8 @@ public class LoginStep extends BaseUtil{
     @And("^I enter the following for Login$")
     public void iEnterTheFollowingForLogin(List<User> table) throws Throwable {
         base.scenarioDef.createNode(new GherkinKeyword("And"), "I enter the following for login");
-        //Create an ArrayList
-        //List<User> users =  new ArrayList<User>();
-        //Store all the users
-        //List<User> users = table.asList(User.class);
-
         LoginPage page = new LoginPage(base.Driver);
-
         page.Login(table.get(0).username, table.get(0).password);
-
-        //page.Login(users.get(2), users.get(3));
-
     }
 
     @And("^I enter ([^\"]*) and ([^\"]*)$")
@@ -85,7 +77,7 @@ public class LoginStep extends BaseUtil{
     @Then("^I should see the userform page wrongly$")
     public void iShouldSeeTheUserformPageWrongly() throws Throwable {
         base.scenarioDef.createNode(new GherkinKeyword("Then"), "I should see  the useform page wrongly");
-        //Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("sdfgdsfsd")).isDisplayed(), true);
+        //Assert.assertNotEquals("Its not displayed", base.Driver.findElement(By.linkText("Employee Details")).isDisplayed(), true);
     }
 
 
