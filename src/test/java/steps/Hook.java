@@ -45,9 +45,9 @@ public class Hook extends BaseUtil{
 //        base.Driver = new ChromeDriver();
 
         base.Driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
-                .withProjectName("My Test Project ")
+                .withProjectName(System.getenv("BuildNumber"))
                 //add
-                .withJobName("First Test Job")
+                .withJobName(System.getenv("ReleaseName"))
                 .withToken("U--LKi5tve35kNidu4uRp5IzAWrhL7PNVp3jEn4Y55U1")
                 .build(ChromeDriver.class);
     }
